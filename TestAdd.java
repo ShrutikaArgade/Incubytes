@@ -21,8 +21,19 @@ class TestAdd {
 		assertEquals(calculator.calculate("1"),1);
 	}
 		
-		
+	public void TwoNumbersCommaDelimiterReturnSum()
+	{
+		assertEquals(calculator.calculate("1,2"),3);
 
+	}
+	public void TwoNumbersNewLineDelimiterReyurnSum()
+	{
+		assertEquals(calculator.calculate("1\n2"),3);
+	}
+	
+	public void NegativeNumberException()
+	{
+		calculator.calculate("-1");
 	}
 
 
